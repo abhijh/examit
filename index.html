@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+    <link rel="manifest" href="manifest.json">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/countdowncube.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/countdowncube.js"></script>
+    <script src="js/custom.js"></script>
+  </head>
+  <body style="background-color: #F3F3F3;display:flex;">
+    <div class="modal-dialog" style="flex:5; margin-left: 200px;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div id="counter" style="float: right;"></div>
+            <h3><span class="label label-warning" id="qid">2</span> Where is Taj Mahal located?</h3>
+          </div>
+          <div class="modal-body">
+            <div class="col-xs-3 col-xs-offset-5">
+              <div id="loadbar" style="display: none;">
+                <div class="blockG" id="rotateG_01"></div>
+                <div class="blockG" id="rotateG_02"></div>
+                <div class="blockG" id="rotateG_03"></div>
+                <div class="blockG" id="rotateG_04"></div>
+                <div class="blockG" id="rotateG_05"></div>
+                <div class="blockG" id="rotateG_06"></div>
+                <div class="blockG" id="rotateG_07"></div>
+                <div class="blockG" id="rotateG_08"></div>
+              </div>
+            </div>
+
+            <div class="quiz" id="quiz" data-toggle="buttons">
+              <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="1">1 Agra</label>
+              <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="2">2 Delhi</label>
+              <label class="element-animation3 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="3">3 Mumbai</label>
+              <label class="element-animation4 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="4">4 Kolkata</label>
+            </div>
+          </div>
+          <div class="modal-footer text-muted">
+            <div style="float: right;">
+              <a href="" class="btn btn-primary" id="next">Next</a>
+            </div>
+            <span id="answer"></span>
+          </div>
+        </div>
+      </div>
+    <div class="modal-dialog" style="flex:2;margin: 10px 20px 20px 20px;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>Your rival's score</h3>
+          </div>
+          <div class="modal-body">
+            <img src="http://s3.amazonaws.com/37assets/svn/765-default-avatar.png" width="100" height="100" style="margin-left: 80px;">
+            <br><br><br>
+            <div class="alert alert-success">2/10</div>
+          </div>
+        </div>
+        <br>
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>Leaderboard</h3>
+          </div>
+          <div class="modal-body">
+            <table class="table table-responsive">
+              <thead>
+                <th>ID</th>
+                <th>USERNAME</th>
+                <th>SCORE</th>
+                <th>CORRECT</th>
+                <th>ACCURACY%</th>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>
